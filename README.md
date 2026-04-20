@@ -3,15 +3,15 @@
 A real-time messenger app built with Node.js, MongoDB, Socket.io, and vanilla JS.
 
 ## Features
-- 🔐 User registration & login (JWT auth)
-- 💬 Real-time messaging with Socket.io
-- 👤 Online/offline status indicators
-- ✍️ Typing indicators
-- ✓✓ Read receipts
-- 🔍 User search
-- 📜 Message history (paginated)
-- 🗑️ Message deletion
-- 📅 Date dividers in chat
+- User registration & login (JWT auth)
+- Real-time messaging with Socket.io
+- Online/offline status indicators
+- Typing indicators
+- Read receipts
+- User search
+- Message history (paginated)
+- Message deletion
+- Date dividers in chat
 
 ## Prerequisites
 - Node.js v18+
