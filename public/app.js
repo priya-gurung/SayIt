@@ -229,7 +229,7 @@ async function bootstrap() {
   showAppScreen();
   // Set current user UI
   makeAvatar(document.getElementById("my-avatar"), currentUser.username);
-  document.getElementById("my-username").textContent = currentUser.username;
+  // document.getElementById("my-username").textContent = currentUser.username;
   // Init socket
   initSocket();
   // Load conversations
@@ -576,13 +576,13 @@ document.addEventListener("DOMContentLoaded", async () => {
   document.getElementById("logout-btn").addEventListener("click", logout);
 
   // Search toggle
-  document.getElementById("search-toggle-btn").addEventListener("click", () => {
-    const panel = document.getElementById("search-panel");
-    panel.classList.toggle("hidden");
-    if (!panel.classList.contains("hidden")) {
-      document.getElementById("user-search").focus();
-    }
-  });
+  // document.getElementById("search-toggle-btn").addEventListener("click", () => {
+  //   const panel = document.getElementById("search-panel");
+  //   panel.classList.toggle("hidden");
+  //   if (!panel.classList.contains("hidden")) {
+  //     document.getElementById("user-search").focus();
+  //   }
+  // });
 
   // User search input
   document.getElementById("user-search").addEventListener("input", (e) => {
@@ -649,8 +649,8 @@ document.addEventListener("DOMContentLoaded", async () => {
       profilePopup.classList.toggle("show");
 
       // Sync username
-      document.getElementById("popup-username").textContent =
-        document.getElementById("my-username").textContent;
+      document.getElementById("popup-username").textContent = currentUser.username;
+        // document.getElementById("my-username").textContent;
 
       // Copy avatar letter + color
       const avatar = document.getElementById("popup-avatar");

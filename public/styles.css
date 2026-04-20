@@ -488,6 +488,8 @@ body {
 
 /* ===== SEARCH ===== */
 .search-panel {
+  margin: 10px;
+  border-radius: 30px;
   border-bottom: 1px solid var(--border);
   overflow: hidden;
   animation: slideDown 0.2s ease;
